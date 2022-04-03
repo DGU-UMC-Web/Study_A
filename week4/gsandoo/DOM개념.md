@@ -197,6 +197,31 @@
     $cityDiv.insertAdjacentHTML("afterbegin",worstcitylist);
 </pre>
 
+# 클래스 와 속성 생성해서 값 할당해주기
+
+- <pre>
+    const $worstcityDiv = document.createElement("div");
+    const $worstcitysubTitle = document.createElement("h2");
+    $worstcitysubTitle.innerText= "Worst 5";
+    $worstcityDiv.appendChild($worstcitysubTitle);
+</pre>
+
+
+- <pre>
+    $worstcityDiv.appendChild(worstCity);
+    $container[0].appendChild($worstcityDiv);
+</pre>
+
+
+# classList 클래스 생성
+
+- $worstcityDiv.classList.add('city');
+
+
+# setAttribute 속성 생성
+
+- worstCity.setAttribute('name','worstCity');
+console.log(worstCity);
 
 
 

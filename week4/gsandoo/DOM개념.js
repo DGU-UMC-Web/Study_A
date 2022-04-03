@@ -165,7 +165,29 @@ const worstcitylist ='<ul><li>Cairo<li><li>Beijing<li><li>LA<li><li>Minneapolis<
 $cityDiv.insertAdjacentHTML("afterbegin",worstcitylist);
 
 
+//=================================================================================
 
+//클래스 생성해서 값 할당해주기
+
+const $worstcityDiv = document.createElement("div");
+const $worstcitysubTitle = document.createElement("h2");
+$worstcitysubTitle.innerText= "Worst 5";
+$worstcityDiv.appendChild($worstcitysubTitle);
+
+
+$worstcityDiv.appendChild(worstCity);
+$container[0].appendChild($worstcityDiv);
+
+
+//classList
+
+$worstcityDiv.classList.add('city');
+
+
+//setAttribute
+
+worstCity.setAttribute('name','worstCity');
+console.log(worstCity);
 
 
 
